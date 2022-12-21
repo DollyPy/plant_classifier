@@ -38,8 +38,10 @@ def make_pred(image_path):
 
 try:
     model = models.load_model("https://drive.google.com/drive/folders/1OtVzRp8jR8enDlH4U0bUIqS0KPF5yGvY?usp=share_link")
+    print("Successful")
 except:
-     st.write(os.getcwd())
+    print("Unsuccess")
+    st.write(os.getcwd())
 Diseases = {
     "Scab":["Leaving it out there in the Sun\n\n", "Paint it red"], "Cedar_rust":["Paint it Green"],
     "Cercospora_leaf":[], "Common_rust":[], "Northern_Leaf_Blight":[],
