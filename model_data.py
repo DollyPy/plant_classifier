@@ -37,7 +37,7 @@ def make_pred(image_path):
 
 
 try:
-    model = models.load_model("./models/LeafModel")
+    model = models.load_model("https://drive.google.com/drive/folders/1OtVzRp8jR8enDlH4U0bUIqS0KPF5yGvY?usp=share_link")
 except:
      st.write(os.getcwd())
 Diseases = {
