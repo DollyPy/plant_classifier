@@ -37,16 +37,25 @@ def make_pred(image_path):
 
 
 try:
-    model = models.load_model("https://drive.google.com/drive/folders/1OtVzRp8jR8enDlH4U0bUIqS0KPF5yGvY?usp=share_link")
+    model = models.load_model("./models/LeafModel")
     print("Successful")
 except:
-    print("Unsuccess")
+    print("Unsuccessful")
     st.write(os.getcwd())
 Diseases = {
-    "Scab":["Leaving it out there in the Sun\n\n", "Paint it red"], "Cedar_rust":["Paint it Green"],
-    "Cercospora_leaf":[], "Common_rust":[], "Northern_Leaf_Blight":[],
-    "Black_Rut":[], "Esca":[], "Blight":[],
+    "Scab":["  i) Chemical control can reduce an infection but it's challenging to apply at just the right times.\n\n", " ii) Apple scab resistant cultivars are the best way to prevent an infestation.\n\n","iii) Raking and removing leaves around trees in fall will reduce a source of infection.\n\n"], 
+    "Black_rot":["i) Remove diseased fruit as soon as you notice the problem.\n\n", "ii) This reduces the fungi that cause summer rots and spots."],
+    "Cedar_rust":["i) It is caused by a fungus that makes its primary home in eastern red cedar trees and other junipers.\n\n", "ii) If possible, remove any junipers growing within 200 feet of an apple tree.\n\n", "iii) Many cedar apple rust resistant apple cultivars are available.\n\n"],
+    "Cercospora_leaf":["i) Plant corn hybrids with resistance to the disease\n\n", "ii) Crop rotation and plowing debris into soil may reduce levels of inoculum in the soil but may not provide control in areas where the disease is prevalent\n\n", "iii) Foliar fungicides may be economically viable for some high yeilding susceptible hybrids."], 
+    "Common_rust":["i) The most effective method of controlling the disease is to plant resistant hybrids\n\n", "ii) Application of appropriate fungicides may provide some degree on control and reduce disease severity\n\n", "iii) Fungicides are most effective when the amount of secondary inoculum is still low, generally when plants only have a few rust pustules per leaf."], 
+    "Northern_Leaf_Blight":["i) Follow proper tillage to reduce fungus inoculum from crop debris.\n\n", "ii) Follow crop rotation with non host crop.\n\n", "iii) Grow available resistant varieties.\n\n", "iv) In severe case of disease incidence apply suitable fungicide."],
+    "Black_Rut":[""], 
+    "Esca":[], 
+    "Blight":[],
     "Bacterial_Spot":[],
-    "P_Early_Blight":[],"P_Late_Blight":[],
-    "Early_Blight":[], "Leaf_Mold":[], "Target_Spot":[]
+    "P_Early_Blight":[],
+    "P_Late_Blight":[],
+    "Early_Blight":[], 
+    "Leaf_Mold":[], 
+    "Target_Spot":[]
 }
