@@ -37,7 +37,7 @@ def make_pred(image_path):
 
 
 try:
-    model = models.load_model(".models/leaf.h5")
+    model = models.load_model("./models/leaf.h5")
     print("Successful")
 except:
     print("Unsuccessful")
