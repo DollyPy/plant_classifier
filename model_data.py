@@ -23,11 +23,11 @@ def add_bg_from_local(image_file):
     unsafe_allow_html=True
     )
 def make_pred(image_path):
-        class_codes={
+    class_codes={
         0:"Apple_Healthy", 1:"Apple_Scab", 2:"Apple_Black_rot", 3:"Apple_Cedar_rust", 
         4:"Corn_Healthy", 5:"Corn_Cercospora_leaf", 6:"Corn_Common_rust", 7:"Corn_Northern_Leaf_Blight",
         8:"Grape_Healthy", 20:"Grape_Black_Rut", 9:"Esca",10:"Grape_Blight",
-        1`:"Pepper_Healthy", 12:"Pepper_Bacterial_Spot",
+        1:"Pepper_Healthy", 12:"Pepper_Bacterial_Spot",
         13:"Potato_Healthy", 14:"Potato_Early_Blight",15:"Potato_Late_Blight",
         16:"Tomato_Healthy", 17:"Tomato_Early_Blight", 18:"Tomato_Leaf_Mold",19:"Tomato_Mosaic_virus"
     }
